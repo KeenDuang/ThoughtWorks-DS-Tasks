@@ -1,6 +1,6 @@
 import pandas as pd
 
-rates = pd.read_csv('./ml-25m/ratings.csv')
+rates = pd.read_csv('./ml-1m/ratings.csv')
 rating = pd.DataFrame(rates.groupby('movieId').mean()['rating'], columns=['rating'])
 
 

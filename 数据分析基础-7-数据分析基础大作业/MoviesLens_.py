@@ -66,4 +66,4 @@ plt.figure(figsize=(11, 8), dpi=120)
 rating_month.plot(color='DarkBlue')
 plt.xlabel('Month')
 plt.ylabel('Rating')
-plt.show()
+plt.show()                                             # 电影复仇者联盟（The Avengers）每个月评分的平均值变化曲线图

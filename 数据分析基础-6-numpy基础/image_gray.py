@@ -4,8 +4,7 @@ from PIL import Image
 
 
 def image_gray(image_ar: ndarray) -> ndarray:
-    # todo: 使用平均法对图像进行灰度化处理
-    pass
+    return np.mean(image_array,axis=2)
 
 
 def read_image(image_path: str) -> ndarray:

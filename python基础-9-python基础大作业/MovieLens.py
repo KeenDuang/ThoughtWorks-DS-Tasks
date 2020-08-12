@@ -24,10 +24,10 @@ for i in range(len(link)):
 no_link_num = pd.Series(idx).nunique()  # 没有外部链接的电影
 
 time_start = pd.to_datetime('1970-01-01')
-time_2006_start = pd.to_datetime('2018-01-01')
-time_2006_end = pd.to_datetime('2019-01-01')
-time_diff_start = (time_2006_start - time_start).total_seconds()
-time_diff_end = (time_2006_end - time_start).total_seconds()
+time_2018_start = pd.to_datetime('2018-01-01')
+time_2018_end = pd.to_datetime('2019-01-01')
+time_diff_start = (time_2018_start - time_start).total_seconds()
+time_diff_end = (time_2018_end - time_start).total_seconds()
 rating_2018 = rating[(rating['timestamp'] >= time_diff_start) & (rating['timestamp'] < time_diff_end)]
 users_2018_rating_num = rating_2018['userId'].nunique()  # 2018年评分人数
 
